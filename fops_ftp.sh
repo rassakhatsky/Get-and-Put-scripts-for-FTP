@@ -196,12 +196,12 @@ get)
     fi
     for FL in "${OUT[@]}"
     do
-        if [[ $FL == *.txt* ]]
+        if [[ $FL == *.csv* ]]
             then
                 echo $FL
                 array=($FL)
                 FILE=${array[8]}
-                if [[ $FILE == *.txt* ]]
+                if [[ $FILE == *.csv* ]]
                     then
                         WF=$(mktemp /tmp/$(basename $0).XXXXXX)
                         OUT=
